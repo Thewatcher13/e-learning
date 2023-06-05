@@ -132,9 +132,7 @@ h1 {
 .coursetitle {
   margin-bottom: 1rem;
   
-}
-
-.animation::before {
+}.animation::before {
   content: url(../assets/icon-animation.svg);
   display:block;
   margin-bottom: 1.5rem;
@@ -147,7 +145,7 @@ h1 {
 }
 
 .photography::before {
-  content: url(../assets/icon-business.svg);
+  content: url(../assets/icon-photography.svg);
   display:block;
   margin-bottom: 1.5rem;
 }
@@ -163,6 +161,7 @@ h1 {
   display:block;
   margin-bottom: 1.5rem;
 }
+
 
 .course-item a{
   color:#F74780;
