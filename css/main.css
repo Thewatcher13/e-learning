@@ -134,8 +134,32 @@ h1 {
   
 }
 
-.coursetitle::before {
+.animation::before {
   content: url(./assets/icon-animation.svg);
+  display:block;
+  margin-bottom: 1.5rem;
+}
+
+.design::before {
+  content: url(./assets/icon-design.svg);
+  display:block;
+  margin-bottom: 1.5rem;
+}
+
+.photography::before {
+  content: url(./assets/icon-photography.svg);
+  display:block;
+  margin-bottom: 1.5rem;
+}
+
+.crypto::before {
+  content: url(./assets/icon-crypto.svg);
+  display:block;
+  margin-bottom: 1.5rem;
+}
+
+.business::before {
+  content: url(./assets/icon-business.svg);
   display:block;
   margin-bottom: 1.5rem;
 }
