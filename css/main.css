@@ -135,7 +135,7 @@ h1 {
 }
 
 .coursetitle::before {
-  content: url(/starter-code/assets/icon-animation.svg);
+  content: url(./assets/icon-animation.svg);
   display:block;
   margin-bottom: 1.5rem;
 }
