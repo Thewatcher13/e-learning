@@ -135,19 +135,19 @@ h1 {
 }
 
 .animation::before {
-  content: url("./assets/logo-dark.svg");
+  content: url("./assets/icon-animation.svg");
   display:block;
   margin-bottom: 1.5rem;
 }
 
 .design::before {
-  content: url(./assets/icon-design.svg);
+  content: url("./assets/icon-design.svg");
   display:block;
   margin-bottom: 1.5rem;
 }
 
 .photography::before {
-  content: url(./assets/icon-photography.svg);
+  content: url(/assets/icon-business.svg);
   display:block;
   margin-bottom: 1.5rem;
 }
