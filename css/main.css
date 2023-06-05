@@ -135,7 +135,7 @@ h1 {
 }
 
 .animation::before {
-  content: url("././assets/icon-animation.svg");
+  content: url(assets/icon-crypto.svg);
   display:block;
   margin-bottom: 1.5rem;
 }
