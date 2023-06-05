@@ -135,7 +135,7 @@ h1 {
 }
 
 .animation::before {
-  content: url(./assets/icon-animation.svg);
+  content: url("./assets/logo-dark.svg");
   display:block;
   margin-bottom: 1.5rem;
 }
