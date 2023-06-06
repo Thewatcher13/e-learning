@@ -43,6 +43,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -121,6 +125,8 @@ body {
   max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
+  padding:1rem;
+  box-sizing: content-box;
 
 
 }
@@ -136,11 +142,10 @@ body {
 }
 
 .header {
- display: grid ;
- justify-content: space-between;
- align-items: center;
- flex-wrap: wrap;
- gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
  font-family: var(--heading-S-font-family);
  font-weight: var(--body-S-font-weight);
  font-size: var(--body-S-font-size);
@@ -201,7 +206,6 @@ h1 {
   grid-template-columns: 1fr;
   gap:1.5rem;
 }
-
 .animation::before {
   content: url(../assets/icon-animation.svg);
   display:block;
@@ -227,6 +231,9 @@ h1 {
   display:block;
 }
 
+.course-item p{
+  margin-block-end: 1rem;;
+}
 .course-item a{
   color:#F74780;
   display:block;
