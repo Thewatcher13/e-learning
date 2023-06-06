@@ -192,10 +192,6 @@ h1 {
   border-radius: 10px;
 }
 
-
-
-
-
 .coursetitle {
   margin-bottom: 1rem;
   
@@ -206,6 +202,7 @@ h1 {
   grid-template-columns: 1fr;
   gap:1.5rem;
 }
+
 .animation::before {
   content: url(../assets/icon-animation.svg);
   display:block;
@@ -232,7 +229,7 @@ h1 {
 }
 
 .course-item p{
-  margin-block-end: 1rem;;
+  margin-block-end: 1rem;
 }
 .course-item a{
   color:#F74780;
