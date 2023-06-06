@@ -1,0 +1,266 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  
+  --heading-XL-font-family: 'Plus Jakarta Sans', sans-serif;
+  --heading-XL-font-weight: 800;
+  --heading-XL-font-size: 3.5rem;
+  --heading-XL-line-height: 1.25;
+
+  --heading-L-font-family: 'Plus Jakarta Sans', sans-serif;
+  --heading-L-font-weight: 800;
+  --heading-L-font-size: 2.5rem;
+  --heading-L-line-height: 1.275;
+
+  --heading-M-font-family: 'Plus Jakarta Sans', sans-serif;
+  --heading-M-font-weight:800;
+  --heading-M-font-size: 2rem;
+  --heading-M-line-height: 1.25;
+
+  --heading-S-font-family: 'Plus Jakarta Sans', sans-serif;
+  --heading-S-font-weight: 800;
+  --heading-S-font-size: 1.5rem;
+  --heading-S-line-height: 1.16;
+
+
+  --body-M-font-family: 'Plus Jakarta Sans', sans-serif;
+  --body-M-font-weight: 500;
+  --body-M-font-size: 1.125rem;
+  --body-M-line-height: 1.55;
+
+  --body-S-font-family: 'Plus Jakarta Sans', sans-serif;
+  --body-S-font-weight: 700;
+  --body-S-font-size: 1rem;
+  --body-S-line-height: 1.75;
+  
+
+}
+
+body {
+  font-family: var(--body-M-font-family);
+  font-size: var(--body-M-font-size);
+  font-weight: var(--body-M-font-weight);
+  line-height: var(--body-M-line-height);
+}
+
+.container {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1rem;
+  box-sizing: content-box;
+
+
+}
+
+
+.blue-btn {
+  height:3rem;
+  width:8.75rem;
+  background-color: #13183F;
+  border-radius: 2rem;
+  color:white;
+  padding: 0.5625rem 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+ font-family: var(--heading-S-font-family);
+ font-weight: var(--body-S-font-weight);
+ font-size: var(--body-S-font-size);
+ line-height: var(--body-S-line-height);
+}
+
+h1 {
+  font-family: var(--heading-XL-font-family);
+  font-size: var(--heading-XL-font-size);
+  font-weight: var(--heading-XL-font-weight);
+  line-height: var(--heading-XL-line-height);
+  margin-top:2.375rem;
+  margin-bottom: 1.625rem;
+}
+
+.intro-text {
+  color:#83869A;
+  margin-bottom:1.5rem;
+}
+
+.leftcol a{
+  display: inline-block;
+  background-image: linear-gradient(#FF6F48 ,#F02AA6);
+  font-family: var(--heading-S-font-family);
+  font-size: var(--heading-S-font-size);
+  font-weight: var(--heading-S-font-weight);
+  line-height: var(--heading-S-line-height);
+  color:white;
+  border-radius: 2rem;
+  padding:0.9375rem 2.3125rem;
+}
+
+
+
+
+.courses > h2 {
+  background-image: linear-gradient(#FF6F48 ,#F02AA6);
+  font-family: var(--heading-S-font-family);
+  font-size: var(--heading-S-font-size);
+  font-weight: var(--heading-S-font-weight);
+  line-height: var(--heading-S-line-height);
+  color:white;
+  padding: 1.5rem 1.8125rem 2rem 1.75rem;
+  border-radius: 10px;
+}
+
+
+
+
+
+.coursetitle {
+  margin-bottom: 1rem;
+  
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:1.5rem;
+}
+
+.animation::before {
+  content: url(/starter-code/assets/icon-animation.svg);
+  display:block;
+}
+
+.design::before {
+  content: url(/starter-code/assets/icon-design.svg);
+  display:block;
+}
+
+.photography::before {
+  content: url(/starter-code/assets/icon-photography.svg);
+  display:block;
+}
+
+.crypto::before {
+  content: url(/starter-code/assets/icon-crypto.svg);
+  display:block;
+}
+
+.business::before {
+  content: url(/starter-code/assets/icon-business.svg);
+  display:block;
+}
+.course-item p{
+  margin-block-end: 1rem;;
+}
+.course-item a{
+  color:#F74780;
+  display:block;
+}
+
+footer {
+  background-color: #13183F;
+  padding:2.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a{
+  background-image: linear-gradient(#FF6F48 ,#F02AA6);
+  border-radius: 2rem;
+  padding: 9px 24px;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
